@@ -1,0 +1,12 @@
+.title {
+    color:red;
+}
+
+.button {
+    background-color: white;
+    color:black;
+}
+.button:hover {
+    background-color: wheat;
+    color:darkred;
+}
