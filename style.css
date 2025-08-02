@@ -1,3 +1,31 @@
+/* 
+note to self:
+this snippet is used to ignore browser default spacing 
+and provide an easier to use box size metric
+
+something like ths is put in almost every project by default
+https://forum.freecodecamp.org/t/before-after-box-sizing-border-box/425735
+*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/*
+note to self:
+these vars are useful when i need to change something cause i only need to change
+it in one place
+*/
+:root {
+    --primary-color: lightblue;
+    --secondary-color: white;
+    --background-color: wheat;
+    --text-color:black;
+}
+
 .title {
     color:red;
 }
@@ -9,4 +37,15 @@
 .button:hover {
     background-color: wheat;
     color:darkred;
+}
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color:var(--text-color)
 }
