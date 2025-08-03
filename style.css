@@ -44,7 +44,7 @@ p {
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     line-height: 1.6;
     background-color: var(--background-color);
     color:var(--text-color)
