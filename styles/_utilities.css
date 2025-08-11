@@ -1,0 +1,32 @@
+.ratio-square { aspect-ratio: 1 / 1; }
+.ratio-wide { aspect-ratio: 2 / 1; }
+.ratio-portrait { aspect-ratio: 9 / 16; }
+
+.split-30 { width: 30%; }
+.split-70 { width: 70%; }
+.left { left: 0; }
+.right { right: 0; }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/*
+tutorial
+https://www.reddit.com/r/webdev/comments/u5m4ue/frosted_class_effect_in_css_one_of_my_favorites/
+*/
+.frosted-glass {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+}
