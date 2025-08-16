@@ -12,6 +12,7 @@ https://forum.freecodecamp.org/t/before-after-box-sizing-border-box/425735
     padding: 0;
     margin:0;
     box-sizing:border-box;
+    outline: 2px red;
 }
 
 /*
@@ -37,7 +38,7 @@ a {
 
 /* TBA: https://opengameart.org/content/city-parallax-background-with-buildings-pixel-art */
 body {
-    background-image: url('assets/images/bgTEMP.png');
+    background-image: url('../../assets/images/bgTEMP.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
