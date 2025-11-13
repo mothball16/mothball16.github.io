@@ -2,10 +2,119 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://people.rit.edu/jz6044/235/project1/index.html">
-    <title>mothball's portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/styles-upd.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="./src/app.js" defer></script>
+    <title>Justin's portfolio</title>
 </head>
 <body>
-    <p>if the redirect doesn't work, <a href="https://people.rit.edu/jz6044/235/project1/index.html">click here</a></p>
+    <div class="container">
+        <header>
+            <h1>portfolio</h1>
+        </header>
+        <div class="subheader">
+            A collection of my cool works
+        </div>
+
+        
+        <div class="desc">
+            <h3>Welcome!</h3>
+            <ul>
+                <li>To watch media, <b>hover</b> over the video.</li>
+                <li>To open description, <b>click</b> on the video.</li>
+            </ul>
+            <h3>Icons</h3>
+            <ul>
+                <li><img src="./media/card-icons/lua.png" alt="lua" class="card-icon">
+                    <img src="./media/card-icons/js.png" alt="js" class="card-icon">
+                    <img src="./media/card-icons/csharp.png" alt="csharp" class="card-icon"> Language used for project</li>
+                <li><img src="./media/card-icons/github.png" alt="github" class="card-icon"> Github repo linked in desc</li>
+                <li><img src="./media/card-icons/solo.png" alt="github" class="card-icon"> Solo, showcase is solely my code</li>
+                <li><img src="./media/card-icons/team.png" alt="github" class="card-icon"> Team</li>
+            </ul>
+            
+            <h3>Contact me</h3>
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/mothball16"><i class="fab fa-github"></i> https://github.com/mothball16</a></li>
+                    <li><a href="mailto:jzou0417a@gmail.com"><i class="fas fa-envelope"></i> jzou0417a@gmail.com</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <h3>Thanks for visiting</h3>
+        </div>
+        
+        
+        <section class="timelines">
+            <div class="timeline">
+                <div class="timeline__header">
+                    <h2><img class="subway-icon" src="media/icon1.png" alt="deco"> Showcase</h2>
+                    <div class="timeline__controls">
+                        <button class="backward-btn"><b>Previous</b></button>
+                        <button class="forward-btn"><b>Next</b></button>
+                    </div>
+                </div>
+
+                <div id="main-line" class="timeline__content">
+                    <div class="timeline__visual timeline__visual--main"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="timeline">
+                <div class="timeline__header">
+                <h2><img class="subway-icon" src="media/iconS.png" alt="deco"> Side Projects</h2>
+                    <div class="timeline__controls">
+                        <button class="backward-btn"><b>Previous</b></button>
+                        <button class="forward-btn"><b>Next</b></button>
+                    </div>
+                </div>
+                <div id="side-line" class="timeline__content">
+                    <div class="timeline__visual timeline__visual--sub"></div>
+                </div>
+            </div>
+
+
+            
+        </section>
+        <footer>
+            (icons from <a href="https://icons8.com/">Icons8</a>)
+        </footer>
+    </div>
+
+    <!-- (for grader) This was an extra thing not within the scope of the assignment.
+     i plan to use this for portfolio outside of class and wanted to make typing out cards 
+     easier. The general format excluding cards should still be reasonably within requirements AFAIK-->
+    <script id="entry-template" type="text/x-handlebars-template">
+        {{#each projs}}
+        <div class="timeline__card">
+            <div class="timeline__preview">
+            <div class="timeline__marker"></div>
+            <h3>{{#each icons}}<img src="./media/card-icons/{{this}}.png" alt="{{this}}" class="card-icon"> {{/each}} {{title}}</h3>
+            <i>{{tags}}</i>
+            <video muted loop playsinline class="timeline__media" preload="auto" data-vidStartTime="{{vid_start_time}}">
+                <source src="{{media}}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>  
+            <div class="hide timeline__description">
+                <h4>{{description_title}}</h4>
+                {{#each links}}<p><a href={{this}}><i>{{@key}}</i></a></p>{{/each}}
+                {{#each description_main}}
+                    <p>{{this}}</p>
+                {{/each}}
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+
 </body>
 </html>

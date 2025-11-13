@@ -1,0 +1,139 @@
+{
+    "main-line": {
+        "projs": [
+            {
+                "vid_start_time": 1.5,
+                "title": "FPS Framework",
+                "year": "24",
+                "icons":["lua", "solo"],
+                "tags": "Framework / UI / UX",
+                "media": "https://pub-56d35d9917f746f1a04f5066876ccb02.r2.dev/ACpreview.mp4",
+                "description_title": "Robust first-person shooter framework, battle-tested by millions of players.",
+                "description_main": [
+                    "(Team-project disclaimer: my work in this showcase video is everything aside from modeling)",
+                    "This system uses a plethora of CFrame and camera manipulations that all combine to create a buttery-smooth experience for the user.",
+                    "Clean character movement was a core goal for the game. Sliding, sprinting, \"double sprinting\", crouching, crawling, and leaning are all implemented using various techniques.",
+                    "Raycasting is used to fire weapons, with an extensive JSON-adjacent config to tweak weapons as preferred. Weapon attachments are also customizable in the menu, allowing for users themselves to add their own modifiers onto weapon statistics.",
+                    "<Cool features>",
+                    "I found this less relevant, but I also did a lot of the animations in the game. The kill-tag, for example, is one of my works that I'm pretty happy about.",
+                    "As shown in the latter half of the clip, various throwables were implemented by overriding the left-hand to throw physics-based grenades. A server-side registry is used to validate client updates and replicate them to other clients.",
+                    "Not shown in the video is the game interface, back-end datastores, round system, crate opening screens, among other features, but that'd take too long to showcase and wouldn't be as glamorous, so the clip only shows the cool part : (",
+                    "This was a 'team project' in the sense that I worked in a team, but I was solely responsible for the front-end regarding the weapon framework."
+                ]
+            },
+            {
+                "vid_start_time": 1,
+                "title": "Space SHMUP",
+                "year": "24",
+                "icons":["csharp", "team"],
+                "tags": "Low-Level Systems / Combat / Editor",
+                "media": "https://pub-56d35d9917f746f1a04f5066876ccb02.r2.dev/SHMUPDemo.mp4",
+                "description_title": "Retro space-themed shoot-em-up from scratch, using the MonoGame framework.",
+                "description_main": [
+                    "(Team-project disclaimer: my work in this showcase video is the combat, CD/CR, camera, movement, enemy behavior, and map editor. I was additionally responsible for the game architecture.)",
+                    "Since the MonoGame framework provides nothing but the ability to render things on screen, practically every feature in this game was built from the ground up. Everything from rendering pipelines, camera manipulation, to collision detection/resolution and saving mechanics began from zero lines of code.",
+                    "The finished game features several levels, customizable enemies with swappable movement and attack patterns, a variety of weaponry, an in-house hot-reloadable map editor, complete JSON de/serialization, among other features.",
+                    "The map editor is the only not entirely from scratch feature, implementing the ImGui library to show the forms and input boxes as shown on the right side of the demo.",
+                    "<Cool features>",
+                    "While not demonstrated, the character implements a swept-collision algorithm, allowing for precise CD/CR even at unreasonably fast speeds. Earlier in the game progress, a modified clearance-based A* pathfinding algorithm was successfully implemented for enemies larger than 1x1 to be able to traverse obstacles; however, this feature was never used."
+                ]
+            },
+            {
+                "vid_start_time": 1,
+                "title": "Packages, Please",
+                "year": "25",
+                "icons":["csharp", "team"],
+                "tags": "Architecture / Core Mechanics",
+                "media": "https://pub-56d35d9917f746f1a04f5066876ccb02.r2.dev/packagesPlease%20(1).mp4",
+                "description_title": "\"Papers Please\" clone, created over the span of 5 days in Unity for SCREAM JAM 2025.",
+                "description_main": [
+                    "",
+                    "This game was thrown together in a week in the Unity Engine for a game-jam, making use of Unity's physics to create a primitive \"Papers Please\" 3D clone in the theme of night-time package inspection in a shoddy building.",
+                    "Interfaces are used to implement attributes and attribute renderers, which can be applied to any compatible label onto any compatible package.",
+                    "While not as technically impressive as other projects on this list (given the time requirement of 1 week mid-semester), I made use of packages"
+                ]
+            }
+        ]
+    },
+
+    "side-line": {
+        "projs": [
+            {
+                "vid_start_time": 0.6,
+                "title": "Rocket Artillery",
+                "year": "24-25",
+                "icons":["lua", "solo", "github"],
+                "tags": "Netcode / Physics / Architecture",
+                "media": "https://res.cloudinary.com/dukbvtec9/video/upload/v1761600300/rocketArtyDemo_pdnhws.mp4",
+                "description_title": "Module-oriented rocket artillery, with supplementary systems attachable with a few lines of code.",
+                "links": {"Github Repo": "https://github.com/mothball16/rocket-artillery"},
+                "description_main": [
+                    "A ballistics solver iteratively plots rocket trajectory to distances, caching it once on startup for a variety of systems: ranging sheets, fire control units, calculators, etc.",
+                    "Rockets are simply tables of behaviors, which allows for plug-and-play customization. Not only basic stats, but impact behavior, flight paths, attachable configurations, etc. can be touched in as little as a few seconds.",
+                    "<Cool features>",
+                    "The entire system is built to be extensible into practically every mounted weapon in existence. For example, a mortar could be made simply by swapping the rocket flight behavior to simple projectile-based flight behavior inside the config.",
+                    "A much more different Javelin AT launcher could be made from this system by taking out all turret features, swapping the attachable setup from the turret rack to a part on the launcher model, swapping the rocket flight behavior for missile flight behavior, swapping the turret controller for a Javelin controller, and setting the startup hook to a tool's Equipped event."                
+                ]
+            },     
+            {
+                "vid_start_time": 6,
+                "title": "Console VN/RPG",
+                "year": "24",
+                "icons":["csharp", "solo"],
+                "tags": "Save System / Combat / Customization",
+                "media": "https://pub-56d35d9917f746f1a04f5066876ccb02.r2.dev/CRPG.mp4",
+                "description_title": "Fully featured and functional RPG from the command line.",
+                "description_main": [
+                    "TBA"
+                ]
+            },
+
+            {
+                "vid_start_time": 1,
+                "title": "Lua Graphics Engine",
+                "year": "2023",
+                "icons":["lua", "solo"],
+                "tags": "Algorithms / Optimization / Animation",
+                "media": "https://pub-56d35d9917f746f1a04f5066876ccb02.r2.dev/ezgif-610f3bcd2422b0.mp4",
+                "description_title": "Primitive CPU-based graphics engine from the ground up.",
+                "description_main": [
+                    "This was a project I made in my senior year of highschool.",
+                    "Everything from shapes, to culling, to shading, to rendering, etc. was created with no external libraries through independent research and implementation. Since Lua isn't exactly the language someone would use for a graphics engine, much of this was completed from sparse documentation and non-Lua examples.",
+                    "Flat, Phong, and Gouraud shading are all implemented options, with the clip demonstrating the power of Phong shading from different light sources.",
+                    "<Cool features>",
+                    "I wrote a custom script to translate Roblox's animation keyframes into my own proprietary animation language. As for modeling, I used .MDL files, and in order to make use of the translation abilities, I made a faithful-ish replication of Roblox's humanoid rig, down to joint positions and proportions.",
+                    "Over the span of the final leg of the project, the limitations of a single-threaded CPU-based graphics renderer began to show. The biggest bottleneck was with per-pixel Phong shading, which is extremely computationally expensive.",
+                    "To deal with this, I began applying optimizations using methods such as caching and reducing operations where possible. Post-optimization, I reduced frame generation times by a factor of roughly 5x."
+                ]
+            },   
+            
+            {
+                "vid_start_time": 0,
+                "title": "This website",
+                "year": "2025",
+                "icons":["js", "solo"],
+                "tags": "Webdev / Styling / JSON",
+                "media": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "description_title": "A basic static website as a demonstration of web-dev competence.",
+                "description_main": [
+                    "This was a project I made in my first semester learning web development.",
+                    "This site was made using the vanilla webdev stack, with the Handlebars JS library for JSON templating.",
+                    "The site follows modern flexbox/grid practices and follows RWD principles to modify content according to screen width."
+                ]
+            },
+
+            {
+                "vid_start_time": 0,
+                "title": "Strategy RPG",
+                "year": "2025",
+                "icons":["csharp", "solo"],
+                "tags": "C#, Entity-Component-System",
+                "media": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "description_title": "Turn-based strategy RPG prototype using ECS architecture.",
+                "description_main": [
+                    "(vid and desc. tba)"
+                ]
+            }
+        ]
+    }  
+}
