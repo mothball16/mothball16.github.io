@@ -64,7 +64,7 @@
                 "year": "24-25",
                 "icons":["lua", "solo", "github"],
                 "tags": "Netcode / Physics / Architecture",
-                "media": "https://res.cloudinary.com/dukbvtec9/video/upload/v1761600300/rocketArtyDemo_pdnhws.mp4",
+                "media": "https://pub-56d35d9917f746f1a04f5066876ccb02.r2.dev/WIPMLRS.mp4",
                 "description_title": "Module-oriented rocket artillery, with supplementary systems attachable with a few lines of code.",
                 "links": {"Github Repo": "https://github.com/mothball16/rocket-artillery"},
                 "description_main": [

@@ -317,7 +317,6 @@ footer {
 
 
 @media (min-width: 768px){
-
     /* expand container, since we have enough space to like actually show the timeline */
     .container {
         grid-template-columns: 5fr 1.5fr;
